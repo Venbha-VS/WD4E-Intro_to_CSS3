@@ -11,6 +11,12 @@ header {
     background-color: #2f6f8f;
     padding: 20px;
 }
+/* =====Img ========*/
+img {
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* ===== Navigation ===== */
 nav {
