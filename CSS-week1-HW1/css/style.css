@@ -40,16 +40,16 @@ main {
 
 /* ===== Footer ===== */
 footer {
-    background-color: #2f6f8f;
-    color: white;
+    background-color: #e0e0e0;   /* light gray */
+    color: #000000;              /* black text */
     text-align: center;
     padding: 15px;
 }
-/* Improve link contrast in footer */
 
 footer a {
-    color: #ffffff;
+    color: #0000ee;              /* standard accessible blue link */
 }
+
 
 
 /* ===== Headings ===== */
