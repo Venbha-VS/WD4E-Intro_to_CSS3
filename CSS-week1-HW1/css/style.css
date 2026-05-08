@@ -45,6 +45,12 @@ footer {
     text-align: center;
     padding: 15px;
 }
+/* Improve link contrast in footer */
+
+footer a {
+    color: #ffffff;
+}
+
 
 /* ===== Headings ===== */
 h1 {
