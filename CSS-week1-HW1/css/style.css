@@ -10,12 +10,9 @@ body {
 header {
     background-color: #2f6f8f;
     padding: 20px;
+    text-align: center;
 }
-/* =====Img ========*/
-img {
-    display: block;
-    margin: 0 auto;
-}
+
 
 
 /* ===== Navigation ===== */
