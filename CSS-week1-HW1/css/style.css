@@ -6,6 +6,21 @@ body {
     margin: 0;
 }
 
+/* ===== Skip Link ===== */
+.skip {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip:focus {
+    top: 10px;
+}
+
 /* ===== Header ===== */
 header {
     background-color: #2f6f8f;
@@ -13,22 +28,34 @@ header {
     text-align: center;
 }
 
-
-
 /* ===== Navigation ===== */
 nav {
+    display: inline-block;     /* HW2 requirement */
+    width: 80%;                /* HW2 requirement */
     background-color: #e0e0e0;
     padding: 10px;
 }
 
+/* Remove bullets (HW2 requirement) */
 nav ul {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+/* ❗ OLD RULE — COMMENTED OUT AS REQUIRED */
+/*
 li {
     display: inline-block;
     width: 200px;
+}
+*/
+
+/* ===== Navigation Image (Descendant Selector) ===== */
+nav img {
+    width: 10%;
+    position: relative;
+    top: 20px;
 }
 
 /* ===== Main content ===== */
@@ -38,19 +65,39 @@ main {
     padding: 20px;
 }
 
+/* ===== Grid Layout (Neighborhood page) ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;    /* HW2 requirement */
+    justify-content: center;            /* HW2 requirement */
+    align-items: start;                 /* HW2 requirement */
+    row-gap: 25px;                      /* HW2 requirement */
+}
+
+/* Only images INSIDE grid */
+.grid img {
+    width: 100%;
+}
+
+/* ===== Flex Layout (Parks page) ===== */
+.flex {
+    display: flex;                      /* HW2 requirement */
+    flex-wrap: wrap;                    /* HW2 requirement */
+    justify-content: space-around;      /* HW2 requirement */
+    align-items: center;
+}
+
 /* ===== Footer ===== */
 footer {
-    background-color: #e0e0e0;   /* light gray */
-    color: #000000;              /* black text */
+    background-color: #e0e0e0;
+    color: #000000;
     text-align: center;
     padding: 15px;
 }
 
 footer a {
-    color: #0000ee;              /* standard accessible blue link */
+    color: #0000ee;
 }
-
-
 
 /* ===== Headings ===== */
 h1 {
