@@ -7,18 +7,15 @@ body {
 }
 
 /* ===== Skip to Main Content ===== */
+
 .skip {
     position: absolute;
-    top: -40px;
+    top: 10px;        /* visible at top */
     left: 10px;
     background-color: #ffffff;
     color: #000000;
     padding: 8px;
     z-index: 100;
-}
-
-.skip:focus {
-    top: 10px;
 }
 
 /* ===== Header ===== */
