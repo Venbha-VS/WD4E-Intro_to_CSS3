@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-/* ===== Skip Link ===== */
+/* ===== Skip to Main Content ===== */
 .skip {
     position: absolute;
     top: -40px;
@@ -30,20 +30,21 @@ header {
 
 /* ===== Navigation ===== */
 nav {
-    display: inline-block;     /* HW2 requirement */
-    width: 80%;                /* HW2 requirement */
+    display: inline-block;   /* HW2 */
+    width: 80%;              /* HW2 */
     background-color: #e0e0e0;
     padding: 10px;
+    margin: 0 auto;
 }
 
-/* Remove bullets (HW2 requirement) */
+/* Remove list bullets (HW2) */
 nav ul {
-    list-style-type: none;
+    list-style-type: none;   /* HW2 */
     padding: 0;
     margin: 0;
 }
 
-/* ❗ OLD RULE — COMMENTED OUT AS REQUIRED */
+/* OLD HW1 RULE — COMMENTED OUT (HW2) */
 /*
 li {
     display: inline-block;
@@ -51,40 +52,50 @@ li {
 }
 */
 
-/* ===== Navigation Image (Descendant Selector) ===== */
+/* ===== Nav Image (Descendant Selector) ===== */
 nav img {
-    width: 10%;
+    width: 10%;              /* HW2 */
     position: relative;
     top: 20px;
 }
 
-/* ===== Main content ===== */
+/* ===== Main Content ===== */
 main {
     background-color: #ffffff;
     font-size: 1em;
     padding: 20px;
 }
 
-/* ===== Grid Layout (Neighborhood page) ===== */
+/* ===== Grid Layout (Neighborhood Page) ===== */
 .grid {
-    display: grid;
-    grid-template-columns: 40% 40%;    /* HW2 requirement */
-    justify-content: center;            /* HW2 requirement */
-    align-items: start;                 /* HW2 requirement */
-    row-gap: 25px;                      /* HW2 requirement */
+    display: grid;                               /* HW2 */
+    grid-template-columns: 40% 40%;              /* HW2 */
+    justify-content: center;                     /* HW2 */
+    align-items: start;                          /* HW2 */
+    row-gap: 25px;                               /* HW2 */
+    column-gap: 25px;
+    padding: 20px;
 }
 
-/* Only images INSIDE grid */
+/* ✅ FIX: Prevent grid images from overflowing */
 .grid img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-/* ===== Flex Layout (Parks page) ===== */
+/* ===== Flex Layout (Parks Page) ===== */
 .flex {
-    display: flex;                      /* HW2 requirement */
-    flex-wrap: wrap;                    /* HW2 requirement */
-    justify-content: space-around;      /* HW2 requirement */
+    display: flex;                               /* HW2 */
+    flex-wrap: wrap;                             /* HW2 */
+    justify-content: space-around;               /* HW2 */
     align-items: center;
+    padding: 20px;
+}
+
+/* ✅ FIX: Prevent flex images from overflowing */
+.flex img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* ===== Footer ===== */
